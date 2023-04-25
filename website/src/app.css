@@ -1,0 +1,235 @@
+:root {
+  /*  FONT */
+  --f-family: "montserrat";
+
+  /* core colors */
+  --color-001: #8172d5;
+  --color-002: #27187f;
+  --color-003: #758bfd;
+  --color-004: #bac5ff;
+  --color-005: #133b3a;
+  --color-006: #69a3a2;
+  --color-007: #f2f5f8;
+  --color-008: #cdf7f6;
+  --color-009: #c33149;
+  --color-010: #ffb140;
+  --color-011: #ffffff;
+  /* margins */
+  --margin-left-right: 139px;
+  /* Breakpoints */
+  --breakpoint-tablet: 55rem;
+  --breakpoint-mobile: 368px;
+}
+.headline-1,
+.headline-2,
+.headline-3,
+.headline-4,
+.headline-5,
+.headline-6,
+.paragraph-1,
+.paragraph-2,
+.paragraph-3 {
+  font-family: "montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.headline-1 {
+  font-size: calc(48px - 4vw / 2vh);
+  font-weight: bold;
+  line-height: 61px;
+}
+.headline-2 {
+  font-size: calc(30px - 4vw / 2vh);
+  font-weight: bold;
+  line-height: 61px;
+}
+.headline-3 {
+  font-size: calc(24px - 4vw / 2vh);
+  font-weight: bold;
+  line-height: 61px;
+}
+.headline-4 {
+  font-size: calc(18px + 0.2vw);
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.headline-5 {
+  font-size: calc(10px + 0.3vw + 1vh);
+  font-weight: normal;
+  line-height: 31px;
+}
+.headline-6 {
+  font-size: calc(9px + 1vh + 0.1vw);
+  font-weight: bold;
+  line-height: 21px;
+}
+.paragraph-1 {
+  font-size: calc(0.7rem + 0.3vw + 0.3%);
+  line-height: 22px;
+  font-weight: normal;
+}
+.paragraph-2 {
+  font-size: calc(10px + 0.5vw + 0.5%);
+  line-height: 14px;
+  font-weight: 500;
+  color: #69a3a2;
+}
+.paragraph-3 {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+html,
+body {
+  min-height: 100%;
+  background: rgb(239, 233, 233);
+  color: #000;
+  font-family: "lato";
+}
+::-webkit-scrollbar {
+  /* display: none; */
+  /* background-color: #8172d5; */
+  width: 0.8vh;
+  background-color: #8172d5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+
+body {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+/* sets the base font size for the document; turns on kerning pairs and ligatures */
+a {
+  text-decoration: none;
+}
+body,
+ul,
+ol,
+dl {
+  margin: 0;
+}
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+}
+article,
+aside,
+audio,
+footer,
+header,
+nav,
+section,
+video {
+  display: block;
+}
+
+/* ensures that older browsers will display HTML5 elements correctly */
+
+h1 {
+  font-size: 1.4rem;
+}
+/* begins to set up font sizes relative to base rem – h1 has been used as an example */
+
+p {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+/* sets hyphenation by default on paragraphs */
+
+textarea {
+  resize: vertical;
+}
+/* changes textarea resizing from "both" (UA default) to vertical only */
+
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 0.5rem;
+}
+/* causes tables to actually look like tables */
+
+img {
+  border: none;
+  width: 100%;
+  display: block;
+}
+/* removes outlines from linked images (for older browsers and IE), sets up images for responsive design layout */
+
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+  border: 0px;
+}
+/* removes the inner border effect from focused buttons for form elements in Firefox */
+
+/* removes the OS X appearance from HTML5 search inputs and submit buttons when viewed in Safari */
+
+input:required:after {
+  color: #f00;
+  content: " *";
+}
+/* sets up required form fields with the conventional following red asterix */
+input[type="email"]:invalid {
+  background: #f00;
+}
+/* causes a visual alert in browsers that do client-side checking of HTML5 email field – this may already be the default in some browsers. */
+
+.right {
+  float: right;
+  margin-left: 2rem;
+  clear: right;
+}
+.left {
+  float: left;
+  margin-right: 2rem;
+  clear: left;
+}
+/* allows a quick shortcut for floating elements left and right while avoiding the “float quirk” problem */
+
+sub,
+sup {
+  line-height: 0;
+}
+/* sets superscript and subscript text so that it doesn't throw off leading for elements in which they are included */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+  cursor: pointer;
+}
+svg {
+  width: 30px;
+}

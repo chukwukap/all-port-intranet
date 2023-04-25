@@ -1,0 +1,379 @@
+.page {
+  width: 100%;
+  margin-inline: auto;
+  min-height: 100vh;
+}
+
+.section {
+  /* border: 1px solid brown; */
+  margin-top: 2rem;
+  width: 80%;
+  margin-inline: auto;
+  min-height: 20vh;
+}
+
+/* **************************************
+***************************************** Home page
+*****************************************
+***************************************** */
+
+/* First Section */
+.home-page__section1 > .grid-box {
+  min-height: 25vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
+  gap: 2vw;
+}
+.home-page__section1 > .grid-box > * {
+  /* border: 2px solid yellow; */
+  background: transparent;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+@media (max-width: 55rem) {
+  .home-page__section1 > .grid-box {
+    grid-template-columns: 1fr;
+  }
+  .home-page__section1 > .grid-box > *:nth-child(2) {
+    height: fit-content;
+  }
+}
+/* Company News */
+.home-page__section2 .grid-box {
+  /* border: 2px dashed #71bf0c; */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 01rem;
+}
+.home-page__section2 .section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 55rem) {
+  .home-page__section2 .grid-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 514px) {
+  .home-page__section2 .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* How Do I */
+.home-page__section3 .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vh;
+}
+.home-page__section3 .grid-box > * {
+  background: white;
+}
+@media (max-width: 55rem) {
+  .home-page__section3 .grid-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* full teaser here*/
+.home-page__section4 {
+  width: 100%;
+  /* height: ; */
+}
+.section5__content {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: calc(1rem - 1vh + 1vw);
+  height: fit-content;
+}
+.section5__content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+}
+.section5__content-card > img {
+  object-fit: cover;
+  /* aspect-ratio: 3/3; */
+  height: 60%;
+  /* border: 2px solid green; */
+}
+
+/* **************************************
+***************************************** News page
+*****************************************
+***************************************** */
+.news-page__section1 {
+  display: block;
+}
+.news-page__section1 .grid-box {
+  display: grid;
+  grid-template-columns: 1fr minmax(10rem, 17rem);
+  gap: 4vh;
+}
+
+.news-page__section1 .grid-box > * {
+  /* border: 3px solid gold; */
+  display: grid;
+}
+.news-page__section1 .grid-box > *:nth-child(2) {
+  /* border: 2px solid midnightblue; */
+  /* background: #fff; */
+  gap: 2vh;
+  grid-auto-rows: 1fr;
+}
+.news-page__section1 .grid-box > *:nth-child(2) > * {
+  background: white;
+}
+@media (max-width: 55rem) {
+  .news-page__section1 .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+/* company news */
+.news-page__section2 > * .section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-page__section2 > * .grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+@media (max-width: 55rem) {
+  .news-page__section2 > * .grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 514px) {
+  .news-page__section2 .grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* people news */
+.news-page__section3 .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vh;
+}
+.news-page__section3 .grid-box > * {
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+}
+@media (max-width: 500px) {
+  .news-page__section3 > * .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+/* How do I? */
+.news-page__section4 .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vh;
+}
+.news-page__section4 .grid-box > * {
+  background: white;
+}
+@media (max-width: 55rem) {
+  .news-page__section4 .grid-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .news-page__section4 .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+/* propose content and content manager section */
+.news-page__section5 > .grid-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1vh;
+}
+.news-page__section5 .grid-box > * {
+  background-color: white;
+}
+@media (max-width: 55rem) {
+  .news-page__section5 > .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+/* **************************************
+***************************************** Department services page
+*****************************************
+***************************************** */
+.department-services-page__section1 {
+  /* border: 1px solid rgb(239, 10, 10); */
+}
+.department-services-page__section1 .grid-box {
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vh;
+  grid-template-rows: minmax(7rem, 10rem);
+}
+@media (max-width: 500px) {
+  .department-services-page__section1 .grid-box {
+    grid-template-columns: 1fr;
+    gap: 1vh;
+  }
+}
+/* Additional Tools */
+.department-services-page__section3 .grid-box {
+  gap: 1vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+  /* border: 2px solid green; */
+}
+.department-services-page__section3 .grid-box > * {
+  background-color: white;
+}
+
+@media (max-width: 514px) {
+  .department-services-page__section3 .grid-box {
+    gap: 0.5rem;
+    display: flex;
+    height: fit-content;
+    /* border: 2px solid green; */
+    flex-direction: column;
+  }
+}
+.department-services-page__section3 .grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10rem, 1fr));
+  font-size: 18px;
+}
+@media (max-width: 1000px) {
+  .department-services-page__section3 .grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(7rem, 1fr));
+    font-size: 14px;
+  }
+}
+@media (max-width: 514px) {
+  .department-services-page__section3 .grid-box {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
+    font-size: 12px;
+  }
+}
+/* proposing content and content manager section */
+.department-services-page__section4 > .grid-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2vh;
+}
+@media (max-width: 700px) {
+  .department-services-page__section4 > .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+/****************************************
+***************************************** Who We are Page
+*****************************************
+***************************************** */
+
+/* banner section */
+
+.who-we-are-page__section1 {
+  width: 100%;
+  height: 50vh;
+  /* border: 2px solid magenta; */
+}
+.who-we-are-page__section1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.who-we-are-page__section2 > * {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Company policy section */
+.who-we-are-page__section4 > * {
+  width: 80%;
+  margin-inline: auto;
+}
+.who-we-are-page__section4 .cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 17rem));
+  gap: calc(1vw + 1vh + 0.1rem);
+}
+
+@media (max-width: 500px) {
+  .who-we-are-page__section4 > * {
+    width: 100%;
+  }
+  .who-we-are-page__section4 .cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
+  }
+}
+
+/****************************************
+***************************************** Covid Info Page
+*****************************************
+***************************************** */
+.covid-info-page__section {
+  height: fit-content;
+  border: 2px solid plum;
+}
+.covid-info-page__section1 > .grid-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1vw;
+  grid-auto-rows: auto;
+}
+.covid-info-page__section1 > .grid-box > * {
+  grid-column: 1/2;
+}
+.covid-info-page__section1 > .grid-box > *:nth-child(2) {
+  grid-column: 2 / -1;
+  grid-row: span 2;
+  /* border: 1px solid red; */
+}
+.covid-info-page__section1 > .grid-box > *:nth-child(4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vh;
+}
+.covid-info-page__section1 > .grid-box > *:nth-child(5) {
+  display: grid;
+  gap: 2vh;
+}
+.covid-info-page__section1 > .grid-box > *:nth-child(5) > * {
+  background: white;
+  border: none;
+  padding: 0 0.3rem;
+}
+.covid-info-page__section1 .panes > .grid-box {
+  display: grid;
+  gap: 1vh;
+}
+.covid-info-page__section1 .panes > .grid-box > * {
+  background-color: white;
+}
+
+@media (max-width: 55rem) {
+  .covid-info-page__section1 > .grid-box {
+    grid-template-columns: 1fr;
+  }
+  .covid-info-page__section1 > .grid-box > *:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+@media (max-width: 450px) {
+  .covid-info-page__section1 > .grid-box > *:nth-child(4) {
+    grid-template-columns: 1fr;
+  }
+}
